@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Liste d'Items</title>
+</head>
+<body>
+<h1>Liste des Items</h1>
+<ul>
+  <li th:each="item : ${itemList}" th:text="${item}">Item par défaut</li>
+</ul>
+<!-- Alternative si la liste est vide -->
+<p th:if="${#lists.isEmpty(itemList)}">Aucun item à afficher.</p>
+</body>
+</html>

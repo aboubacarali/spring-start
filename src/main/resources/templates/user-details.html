@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Détails Utilisateur</title>
+</head>
+<body>
+<h1>Détails de l'utilisateur</h1>
+<p>ID: <span th:text="${user.id}">0</span></p>
+<p>Nom d'utilisateur: <span th:text="${user.username}">username</span></p>
+<p>Email: <span th:text="${user.email}">email@example.com</span></p>
+<!-- Bonus: Afficher le statut (actif/inactif) -->
+<p>Statut: <span th:text="${user.active ? 'Actif' : 'Inactif'}">statut</span></p>
+</body>
+</html>
