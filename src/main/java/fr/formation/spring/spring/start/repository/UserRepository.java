@@ -1,4 +1,4 @@
-package fr.formation.spring.spring.start.Repository;
+package fr.formation.spring.spring.start.repository;
 
 import fr.formation.spring.spring.start.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;

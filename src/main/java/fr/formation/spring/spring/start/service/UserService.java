@@ -1,6 +1,6 @@
 package fr.formation.spring.spring.start.service;
 
-import fr.formation.spring.spring.start.Repository.UserRepository;
+import fr.formation.spring.spring.start.repository.UserRepository;
 import fr.formation.spring.spring.start.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
