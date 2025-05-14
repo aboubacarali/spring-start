@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Liste des Tâches</title>
+    <style>
+        .alert {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid transparent;
+            border-radius: 4px;
+        }
+
+        .alert-success {
+            color: #155724;
+            background-color: #d4edda;
+            border-color: #c3e6cb;
+        }
+    </style>
+</head>
+<body>
+<h1>Liste des Tâches</h1>
+
+<!-- Affichage du message flash de succès -->
+<div th:if="${successMessage}" class="alert alert-success" role="alert">
+    <p th:text="${successMsg}"></p>
+</div>
+
+<!-- Ici viendrait l'affichage de la liste des tâches -->
+<p>(Contenu de la liste des tâches...)</p>
+
+</body>
+</html>

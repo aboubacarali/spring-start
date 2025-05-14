@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Compteur de Rafraîchissements</title>
+</head>
+<body>
+<h1>Compteur de Rafraîchissements</h1>
+<p>
+    Cette page a été rafraîchie
+    <strong th:text="${refreshNumber}">0</strong>
+    fois durant cette session.
+</p>
+<p>
+    <a th:href="@{/counter-refresh}">Rafraîchir la page</a>
+</p>
+</body>
+</html>
